@@ -1,0 +1,19 @@
+{
+  "name": "doubtdesk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Gemini-powered doubt solver for Class 6-12 students.",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces --if-present",
+    "dev:client": "npm run dev --workspace client",
+    "dev:server": "npm run dev --workspace server"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
